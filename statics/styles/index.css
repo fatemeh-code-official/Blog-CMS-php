@@ -1,0 +1,591 @@
+/* 
+======
+Slider 
+======
+*/
+
+.slider {
+  height: 30rem;
+  background-image: url(../images/slider.jpg);
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+#slider_search_box {
+  display: none;
+}
+
+/* Shop now button */
+.slider .shop_now {
+  height: 3rem;
+  border: none;
+  background-color: var(--clr-Mauve-Mist);
+  color: #000;
+  padding: 0 3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.slider .shop_now:hover {
+  background-color: var(--clr-Dusty-Pink);
+  color: var(--clr-white);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+#slider_search_box button {
+  position: absolute;
+  right: 0;
+}
+
+/* 
+=============
+End of Slider
+=============
+ */
+
+/* 
+========
+Category 
+========
+*/
+
+.category {
+  overflow-x: auto;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.category .categories {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Category Title */
+.category .category_title {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  width: min-content;
+  border-bottom: 4px solid var(--clr-Dusty-Pink);
+  color: var(--clr-Deep-Plum);
+}
+
+/* Category Item */
+.category .category_item {
+  box-shadow: var(--box-shodow);
+}
+
+.category .category_item a {
+  gap: 1rem;
+}
+
+.category .category_item:hover a p {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.category .category_item img {
+  width: 8rem;
+  height: 10rem;
+}
+
+.category .category_item p {
+  color: var(--clr-black);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* 
+===============
+End of Category 
+===============
+*/
+
+/* 
+==========
+Best sells 
+==========
+*/
+
+.best_sells {
+  margin-top: 5rem;
+}
+
+/* Best sells Title */
+
+.best_sells .best_sells_title {
+  margin: 0 auto;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--clr-Dusty-Pink);
+  width: fit-content;
+  color: var(--clr-Deep-Plum);
+  margin-bottom: 2rem;
+}
+
+/* Best sell items */
+.best_sells .best_sells_items {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: grid;
+  gap: 2.1rem;
+  grid-template-columns: repeat(6, auto);
+}
+
+/* Best sells item */
+.best_sells .best_sells_items .best_sell_item {
+  margin-bottom: 1rem;
+}
+
+/* Best sells item image */
+.best_sells .best_sells_items .best_sell_item img {
+  width: 8rem;
+  height: 10rem;
+  box-shadow: var(--box-shodow);
+}
+
+/* Best sells item Descriptions */
+.best_sells .best_sells_items .best_sell_item .descriptions {
+  gap: 1rem;
+}
+
+.best_sells .best_sells_items .best_sell_item .descriptions .author {
+  margin-top: 1rem;
+  color: var(--clr-Deep-Plum);
+  font-size: 1rem;
+}
+
+.best_sells .best_sells_items a:hover .best_sell_item .descriptions .author {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.best_sells .best_sells_items .best_sell_item .descriptions .book_name {
+  color: var(--clr-Dusty-Pink);
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.best_sells .best_sells_items a:hover .best_sell_item .descriptions .book_name {
+  border-bottom: 2px solid var(--clr-Dusty-Pink);
+  color: var(--clr-Deep-Plum);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* 
+=================
+End of best sells 
+=================
+*/
+
+/* 
+===========
+Daily quote 
+===========
+*/
+
+.daily_quote {
+  margin: 3.5rem 0;
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  background-color: rgba(136, 12, 136, 0.5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  height: 15rem;
+  align-items: flex-end;
+  padding-right: 3rem;
+  gap: 1rem;
+  color: var(--clr-white);
+}
+
+.daily_quote .quote_title {
+  font-size: 1.3rem;
+}
+
+.daily_quote .quote_author {
+  font-size: 1.3rem;
+}
+
+/* 
+==================
+End of Daily quote
+==================
+ */
+
+/* 
+===============
+Popular authors 
+===============
+*/
+
+.popular_authors .popular_authors_title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--clr-Deep-Plum);
+  border-bottom: 3px solid var(--clr-Dusty-Pink);
+  width: fit-content;
+  padding: 1rem;
+}
+
+.popular_authors {
+  margin-top: 1rem;
+}
+
+.popular_authors .authors {
+  gap: 5rem;
+  margin-top: 1rem;
+}
+
+/* Author */
+.popular_authors a .p_author {
+  gap: 1rem;
+}
+
+.popular_authors .authors a .p_author .author_name {
+  color: var(--clr-Deep-Plum);
+  text-align: center;
+}
+
+.popular_authors .authors a .p_author img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.popular_authors .authors a .p_author .author_book {
+  color: var(--clr-Dusty-Pink);
+}
+
+/* 
+======================
+End of Popular authors
+======================
+ */
+
+/*
+================
+RESPONSIVE CODES 
+================
+*/
+
+/* 992px */
+@media screen and (max-width: 992px) {
+  /* Category */
+  .category .categories {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  /* Best sells */
+  .best_sells {
+    margin-top: 3rem;
+  }
+  .best_sells .best_sells_items {
+    grid-template-columns: repeat(5, auto);
+    gap: 2.5rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    gap: 3rem;
+  }
+}
+
+/* 900px */
+@media screen and (max-width: 900px) {
+  /* Category */
+  .category .categories {
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* Best sells items */
+  .best_sells .best_sells_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    gap: 2rem;
+  }
+  .popular_authors .authors a .p_author img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* 800px */
+@media screen and (max-width: 800px) {
+  /* Slider */
+  .slider {
+    position: relative;
+    height: 20rem;
+  }
+  #slider_search_box {
+    display: block;
+  }
+
+  .slider .shop_now {
+    display: none;
+  }
+
+  /* Category */
+  .category .categories {
+    gap: 2rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    gap: 1.5rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+  /* Category */
+  .category .category_item {
+    padding-bottom: 0.5rem;
+  }
+  .category .category_title {
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid var(--clr-Dusty-Pink);
+  }
+  .category .category_item img {
+    width: 6rem;
+    height: 8rem;
+  }
+  .category .category_item p {
+    font-size: 0.8rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    gap: 0.5rem;
+  }
+  .best_sells .best_sells_title {
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+  }
+  .best_sells .best_sells_items .best_sell_item img {
+    width: 6rem;
+    height: 8rem;
+  }
+  .best_sells .best_sells_items .best_sell_item .descriptions {
+    font-size: 0.8rem;
+  }
+  /* Daily qoute */
+  .daily_quote {
+    margin: 2rem 0;
+    height: 10rem;
+  }
+  .daily_quote .quote_title {
+    font-size: 1rem;
+  }
+  .daily_quote .quote_author {
+    font-size: 0.9rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .popular_authors_title {
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--clr-Dusty-Pink);
+    padding-bottom: 0.5rem;
+  }
+  .popular_authors .authors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+  }
+  .popular_authors a .p_author {
+    gap: 0.5rem;
+  }
+  .popular_authors .authors a .p_author .author_name {
+    font-size: 0.8rem;
+  }
+  .popular_authors .authors a .p_author .author_book {
+    font-size: 0.7rem;
+  }
+}
+
+/* 700px */
+@media screen and (max-width: 700px) {
+  /* Category */
+  .category .categories {
+    gap: 3rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    gap: 2rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    column-gap: 4rem;
+  }
+}
+
+/* 650px */
+@media screen and (max-width: 650px) {
+  /* Category */
+  .category .categories {
+    justify-content: space-between;
+  }
+
+  /* Best sells */
+  .best_sells {
+    margin-top: 4rem;
+  }
+  .best_sells .best_sells_items {
+    justify-content: space-between;
+  }
+
+  /* Daily quote */
+  .daily_quote {
+    background-position: top;
+  }
+}
+
+/* 576px */
+@media screen and (max-width: 576px) {
+  /* slider */
+  .slider {
+    height: 15rem;
+  }
+
+  /* Category */
+  .category .category_title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .category .category_item img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_title {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .best_sells .best_sells_items {
+    gap: 0;
+  }
+  .best_sells .best_sells_items a {
+    margin-bottom: 2rem;
+  }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.9rem;
+  }
+}
+
+/* 500px */
+@media screen and (max-width: 500px) {
+  /* Category */
+  .category .category_item img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 1rem 4rem;
+  }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.8rem;
+  }
+}
+
+/* 450px */
+@media screen and (max-width: 450px) {
+  /* Best sells */
+  .best_sells .best_sells_items .best_sell_item .descriptions .author {
+    font-size: 0.9rem;
+  }
+
+  /* Daily quote */
+  .daily_quote {
+    margin-bottom: 1rem;
+  }
+  .daily_quote .quote_title {
+    font-size: 0.7rem;
+  }
+  .daily_quote .quote_author {
+    font-size: 0.7rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors a .p_author img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .popular_authors .authors {
+    column-gap: 3.5rem;
+  }
+}
+
+/* 400px */
+@media screen and (max-width: 400px) {
+  /* Category */
+  .category .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category .category_item img {
+    width: 6rem;
+  }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.6rem;
+  }
+}
