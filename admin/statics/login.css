@@ -1,0 +1,307 @@
+/* 
+====
+Body 
+====
+*/
+
+body {
+  background-color: var(--clr-Cream-White);
+  height: 100dvh;
+}
+
+
+/* 
+===============
+Login container
+===============
+ */
+
+.login_container {
+  width: 50%;
+  margin: 5rem auto;
+  padding: 2rem 1rem 3rem 1rem;
+  background-color: var(--clr-white);
+  box-shadow: var(--box-shodow);
+}
+
+/* 
+======================
+End of Login container
+======================
+ */
+
+
+/* 
+====
+Logo
+====
+ */
+
+.login_container .logo {
+  gap: 2rem;
+}
+
+
+/* Logo image*/
+.login_container .logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+/* Logo title */
+
+.login_container .logo .logo_title {
+  font-size: 3rem;
+  color: var(--clr-Deep-Plum);
+}
+
+/* 
+============
+End of Logo 
+============
+*/
+
+
+/* 
+==========
+Main title 
+==========
+*/
+
+.login_container .main_title {
+  margin-top: 2rem;
+  color: var(--clr-Dusty-Pink);
+}
+/*
+=================
+End of Main title 
+=================
+*/
+
+
+/* 
+==========
+Login form
+==========
+*/
+.login_container .login_form {
+  margin-top: 2rem;
+  gap: 0.8rem;
+  width: 80%;
+}
+
+/* 
+===========
+Form inputs
+============
+*/
+.login_form .form_inputs {
+  width: 100%;
+  padding: 1rem 1rem 1rem;
+  outline: none;
+  border: 1px solid var(--clr-Mauve-Mist);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* :Focus */
+.login_form .form_inputs:focus {
+  background-color: var(--clr-Cream-White);
+}
+
+/* :Hover */
+.login_form .form_inputs:hover {
+  background-color: var(--clr-Cream-White);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* ::Placeholder */
+.login_form .form_inputs::placeholder {
+  color: var(--clr-Deep-Plum);
+  font-size: 1rem;
+}
+
+/* Form icons */
+.form_icons {
+  color: var(--clr-black);
+  font-size: 1.5rem;
+}
+
+/* Submit button */
+.submit_btn{
+  margin-top: 1rem;
+  background-color: var(--clr-Warm-Taupe);
+  border: none;
+  padding: 0.5rem 0;
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.submit_btn:hover{
+  background-color: var(--clr-Dusty-Pink);
+  font-weight: bolder;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* Alert */
+.alert {
+  background-color: rgb(255, 116, 116);
+  color: white;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+
+
+/* 
+==================
+End of Login form 
+==================
+*/
+
+
+/*
+================
+RESPONSIVE CODES
+================
+*/
+
+/* 800px */
+
+@media screen and (max-width: 800px) {
+  .login_container {
+    width: 60%;
+  }
+
+  /* Logo */
+  .login_container .logo {
+    gap: 1rem;
+  }
+
+  /* Logo image */
+  .login_container .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 2.3rem;
+  }
+
+  /* End of logo */
+
+  /* Main title */
+
+  .login_container .main_title {
+    font-size: 1.3rem;
+  }
+
+  /* Login form */
+
+  .login_form .form_inputs {
+    padding: 0.8rem 1rem;
+  }
+  
+  .form_icons {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* 700px */
+
+@media screen and (max-width: 700px) {
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 2.1rem;
+  }
+
+  /* Logo image */
+
+  .login_container .logo img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  /* Main title */
+
+  .login_container .main_title {
+    font-size: 1.2rem;
+  }
+
+  /* Login form */
+
+  .login_container .login_form {
+    margin-top: 2rem;
+  }
+
+  .login_form .form_inputs {
+    padding: 0.7rem 1rem;
+  }
+
+  .login_form .form_inputs::placeholder {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* 500px */
+
+@media screen and (max-width: 500px) {
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 1.5rem;
+  }
+
+  /* Logo image */
+
+  .login_container .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Main title */
+
+  .login_container .main_title {
+    margin-top: 1.5rem;
+  }
+
+  .login_container .main_title {
+    font-size: 1rem;
+  }
+
+  /* Login form */
+
+  .login_form .form_inputs {
+    padding: 0.5rem 1rem;
+  }
+
+  .form_icons {
+    font-size: 1.1rem;
+  }
+
+  .submit_btn {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+  }
+}
